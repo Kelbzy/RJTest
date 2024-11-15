@@ -1,6 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * PolygonArrayDemo 类演示了如何使用多边形数组来存储和打印不同类型的多边形信息。
+ *
+ * @author 李磊
+ * @version 1.0
+ * @date 2024/11/14
+ */
 public class PolygonArrayDemo {
 
     public static void main(String[] args) {

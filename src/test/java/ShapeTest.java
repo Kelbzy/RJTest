@@ -1,8 +1,9 @@
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.Assert.*;
 
 public class ShapeTest {
 
@@ -31,5 +32,41 @@ public class ShapeTest {
         List<Vertex> vertices = Arrays.asList(v1, v2, v3);
         Triangle triangle = new Triangle(vertices);
         assertEquals(6.0, triangle.calcArea(), 0.0001);
+    }
+
+    @Test
+    public void testRectangleCanForm() {
+        Vertex v1 = new Vertex(0, 0);
+        Vertex v2 = new Vertex(4, 0);
+        Vertex v3 = new Vertex(4, 3);
+        Vertex v4 = new Vertex(0, 3);
+        Rectangle rectangle = new Rectangle(v1, v2, v3, v4);
+        assertTrue(rectangle.canForm());
+    }
+
+    @Test
+    public void testTriangleCanForm() {
+        Vertex v1 = new Vertex(0, 0);
+        Vertex v2 = new Vertex(4, 0);
+        Vertex v3 = new Vertex(4, 3);
+        Triangle triangle = new Triangle(Arrays.asList(v1, v2, v3));
+        assertTrue(triangle.canForm());
+    }
+
+    @Test
+    public void testInvalidTriangleCanForm() {
+        Vertex v1 = new Vertex(0, 0);
+        Vertex v2 = new Vertex(4, 0);
+        Vertex v3 = new Vertex(8, 3);
+        Triangle triangle = new Triangle(Arrays.asList(v1, v2, v3));
+        assertFalse(triangle.canForm());
+    }
+
+    @Test
+    public void testAdapterCircleCanForm() {
+        Vertex center = new Vertex(2, 2);
+        Circle circle = new Circle(center, 2);
+        AdapterCircle adapterCircle = new AdapterCircle(circle);
+        assertTrue(adapterCircle.canForm());
     }
 }

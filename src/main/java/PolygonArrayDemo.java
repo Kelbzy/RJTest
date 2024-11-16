@@ -32,6 +32,7 @@ public class PolygonArrayDemo {
         Circle circle = new Circle(center, 2);
         AdapterCircle adapterCircle = new AdapterCircle(circle);
 
+
         List<Vertex> triangleVertices = new ArrayList<>();
         triangleVertices.add(new Vertex(0, 0));
         triangleVertices.add(new Vertex(4, 0));

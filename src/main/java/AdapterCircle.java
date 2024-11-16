@@ -8,6 +8,7 @@ import java.util.List;
  * @version 1.0
  * @since 2024/11/14
  */
+
 public class AdapterCircle implements Polygon {
     /**
      * 被适配的 Circle 对象。

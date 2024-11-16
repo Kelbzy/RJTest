@@ -12,6 +12,7 @@ import java.util.Arrays;
  */
 class TriangleTest {
 
+
     /**
      * 测试使用有效顶点创建 Triangle 对象。
      * <p>

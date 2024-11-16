@@ -34,6 +34,7 @@ public class ShapeTest {
         assertEquals(6.0, triangle.calcArea(), 0.0001);
     }
 
+
     @Test
     public void testRectangleCanForm() {
         Vertex v1 = new Vertex(0, 0);

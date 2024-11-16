@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 /**
  * AdapterCircle 类是一个适配器类，它将 Circle 类适配到 Polygon 接口。
  * 使得 Circle 类可以通过 Polygon 接口进行操作。

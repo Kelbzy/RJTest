@@ -26,6 +26,7 @@ class RectangleTest {
         assertNotNull(rectangle);
     }
 
+
     /**
      * 测试无效顶点组合是否导致无法形成矩形。
      * <p>

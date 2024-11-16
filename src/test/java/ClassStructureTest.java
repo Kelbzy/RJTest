@@ -91,6 +91,7 @@ public class ClassStructureTest {
         }
     }
 
+
     /**
      ** 测试 AdapterCircle 类是否重写了 calcArea 方法。
      *

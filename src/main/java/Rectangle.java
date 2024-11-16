@@ -39,7 +39,13 @@ public class Rectangle implements Polygon {
         this.topRight = topRight;
         this.bottomLeft = bottomLeft;
         this.bottomRight = bottomRight;
+
+        // 检查顶点是否能形成有效的矩形
+        if (!canForm()) {
+            throw new IllegalStateException("给定的顶点无法构成一个有效的矩形");
+        }
     }
+
 
     /**
      * 绘制矩形的方法。

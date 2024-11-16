@@ -47,6 +47,7 @@ public class Rectangle implements Polygon {
     }
 
 
+
     /**
      * 绘制矩形的方法。
      *

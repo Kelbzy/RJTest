@@ -31,6 +31,7 @@ public class Triangle implements Polygon {
     }
 
 
+
     /**
      * 绘制三角形的方法。
      * 具体的绘制逻辑由子类或实现类提供，这里仅打印一个提示信息。

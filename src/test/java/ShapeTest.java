@@ -57,7 +57,7 @@ public class ShapeTest {
     public void testInvalidTriangleCanForm() {
         Vertex v1 = new Vertex(0, 0);
         Vertex v2 = new Vertex(4, 0);
-        Vertex v3 = new Vertex(8, 3);
+        Vertex v3 = new Vertex(2, 0);
         Triangle triangle = new Triangle(Arrays.asList(v1, v2, v3));
         assertFalse(triangle.canForm());
     }

@@ -8,6 +8,7 @@ import java.util.List;
  * @version 1.0
  * @since 2024/11/14
  */
+
 public class AdapterCircle implements Polygon {
     /**
      * 被适配的 Circle 对象。
@@ -20,6 +21,9 @@ public class AdapterCircle implements Polygon {
      * @param circle 要适配的 Circle 对象
      */
     public AdapterCircle(Circle circle) {
+        if (circle == null) {
+            throw new NullPointerException("Circle cannot be null");
+        }
         this.circle = circle;
     }
 

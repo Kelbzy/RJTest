@@ -1,6 +1,7 @@
 import java.util.List;
 
 
+
 /**
  * Triangle 类表示一个三角形，包含三个顶点。
  * 它实现了 Polygon 接口，提供了绘制、判断是否能形成三角形以及计算面积的功能。
@@ -29,6 +30,7 @@ public class Triangle implements Polygon {
         }
         this.vertices = vertices;
     }
+
 
 
     /**

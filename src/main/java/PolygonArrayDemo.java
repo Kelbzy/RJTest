@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
+
 /**
  * PolygonArrayDemo 类演示了如何使用多边形数组来存储和打印不同类型的多边形信息。
  *
@@ -29,6 +31,7 @@ public class PolygonArrayDemo {
         Rectangle rectangle = new Rectangle(vertex1, vertex2, vertex3, vertex4);
         Circle circle = new Circle(center, 2);
         AdapterCircle adapterCircle = new AdapterCircle(circle);
+
 
         List<Vertex> triangleVertices = new ArrayList<>();
         triangleVertices.add(new Vertex(0, 0));
